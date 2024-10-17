@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import './App.css'
 import { LayoutOne } from './layouts/LayoutOne'
 import { HomePage } from './Pages/HomePage'
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-     
+      <RouterProvider router={myApp}/>
     </>
   )
 }

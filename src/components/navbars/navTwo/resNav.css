@@ -1,0 +1,30 @@
+.res-menu{
+    @apply lg:hidden absolute w-full mt-[50px]
+}
+.res-menu .resMenuLogo img{
+    @apply w-[142px] md:w-[200px]
+}
+.icon{
+    @apply p-[7px] rounded-lg text-white w-[45px] h-[45px] bg-[#C4C4C4] bg-opacity-15
+}
+.side-bar{
+    @apply w-full p-5 bg-BrandColor absolute right-0 top-0;
+    animation: popMenu linear .7s;
+}
+@keyframes popMenu{
+    0%{
+        top:-400px
+    }
+    100%{
+        top:0
+    }
+}
+.side-bar .cancel{
+    @apply text-2xl ml-auto
+}
+.side-bar ul{
+    @apply flex flex-col gap-5 items-center
+}
+.side-bar ul li a{
+    @apply text-xl font-Montserrat 
+}

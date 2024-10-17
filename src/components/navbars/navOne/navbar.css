@@ -1,0 +1,15 @@
+.main-nav{
+    @apply absolute w-full pt-[50px] hidden lg:block
+}
+.menu-row{
+    @apply flex justify-between items-center
+}
+.menu ul{
+    @apply flex justify-between items-center gap-[25px]
+}
+.menu ul li a{
+    @apply text-[rgba(255,255,255,0.50)] text-2xl font-medium font-Montserrat hover:text-white hover:font-bold
+}
+.menu-button a{
+    @apply text-BrandColor text-2xl font-Montserrat font-bold py-5 px-[26px] rounded-[20px] bg-[#C4C4C4] bg-opacity-10 shadow-[0_8px_30px_rgb(0,0,0,0.12)]
+}
