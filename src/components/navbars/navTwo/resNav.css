@@ -1,5 +1,8 @@
 .res-menu{
-    @apply lg:hidden absolute w-full mt-[50px]
+    @apply lg:hidden absolute w-full pt-[50px]
+}
+.main-menu{
+    @apply flex justify-between
 }
 .res-menu .resMenuLogo img{
     @apply w-[142px] md:w-[200px]

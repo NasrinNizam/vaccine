@@ -9,7 +9,8 @@ export const ResNav = () => {
   const [show , setShow] = useState(false)
   return (
     <nav className='res-menu'>
-      <div className="container flex justify-between">
+      <div className="container ">
+        <div className="main-menu">
         <div className="resMenuLogo">
           <img src={logo} alt="" />
         </div>
@@ -18,7 +19,7 @@ export const ResNav = () => {
         </div>
         {
           show&&
-        <div className="side-bar">
+          <div className="side-bar">
           <MdCancelPresentation onClick={()=>setShow(!show)} className='cancel' />
           <ul>
             <li><Link to={'/'}>Home</Link></li>
@@ -28,6 +29,7 @@ export const ResNav = () => {
           </ul>
         </div>
         }
+        </div>
       </div>
     </nav>
   )
