@@ -1,6 +1,11 @@
 import React from 'react'
 import './banner.css'
 import { BannerButton } from './BannerButton'
+import { FaRegClock } from "react-icons/fa6";
+import { LuMapPin } from "react-icons/lu";
+import { SchedulePart } from './SchedulePart';
+import { MdOutlineCalendarMonth } from "react-icons/md";
+import { IoShieldOutline } from "react-icons/io5";
 
 export const Banner = () => {
   return (
@@ -24,7 +29,7 @@ export const Banner = () => {
           <img className='img1' src="/images/Group17.png" alt="img" />
           <img className='img2' src="/images/Group18.png" alt="img" />
           <div className="specialist">
-            <div className="flex w-[108px] md:w-[167px] ">
+            <div className="flex w-[108px] md:w-[167px] h-[38px] md:h-[60px] md:mr-5 mr-[10px] ">
               <img className='w-[39px] md:w-[60px] ' src="/images/Rectangle9.png" alt="img" />
               <img className='w-[39px] md:w-[60px] ' src="/images/Rectangle10.png" alt="img" />
               <img className='w-[39px] md:w-[60px] ' src="/images/Rectangle11.png" alt="img" />
@@ -34,6 +39,15 @@ export const Banner = () => {
             </div>
           </div>
         </div>
+        </div>
+        <div className="schedule">
+          <h2><FaRegClock className='icon' /> Schedule your Vaccination</h2>
+          <div className="form">
+            <SchedulePart icon={ <LuMapPin className='text-[#17C2EC]' />} title='Location' detail='Ikeja Lagos, Nigeria' />
+            <SchedulePart icon={ <MdOutlineCalendarMonth className='text-[#17C2EC]' />} title='Date' detail='29 February, 2022' />
+            <SchedulePart icon={ <IoShieldOutline className='text-[#17C2EC]' />} title='Vaccine Type' detail='Mordena' />
+            <button>Submit</button>
+          </div>
         </div>
       </div>
     </section>

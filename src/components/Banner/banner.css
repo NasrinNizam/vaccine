@@ -29,8 +29,23 @@
     @apply absolute top-[50%] translate-y-[-50%] right-0 w-[50px] md:w-[100px]
 }
 .specialist{
-    @apply py-[15px] px-5 bg-[#c4c4c4] bg-opacity-20 absolute left-0 bottom-0 rounded-[20px] flex gap-3
+    @apply py-[15px] px-5 bg-[#c4c4c4] bg-opacity-20 absolute left-0 bottom-0 rounded-[20px] flex items-center  
 }
 .numbers .number{
     @apply text-[14px] md:text-[24px] font-Montserrat font-bold text-white 
+}
+.schedule{
+    @apply mt-[43px] md:mt-[39px] lg:mt-0
+}
+.schedule h2{
+    @apply flex items-center gap-5 text-[14px] md:text-2xl font-bold font-Montserrat text-white mb-5 md:mb-[32px] lg:mb-5
+}
+.schedule h2 .icon{
+    @apply p-[10px] w-[30px] h-[30px] md:w-[50px] md:h-[50px] bg-[#C4C4C4] bg-opacity-10 rounded-lg text-[#17C2EC] text-lg md:text-xl
+}
+.schedule .form{
+    @apply pt-5 pl-[10px] pb-[10px] bg-[#C4C4C4] bg-opacity-10 flex flex-col md:flex-row flex-wrap justify-start items-start gap-[15px] md:gap-[50px] rounded-xl
+}
+.schedule .form button{
+    @apply py-[17px] px-[48px] md:px-[88px] md:py-5 lg:py-5 lg:px-[25px] bg-[#17C2EC] text-white text-[14px] md:text-[20px] font-bold font-Montserrat rounded-[10px] md:ml-[75px]
 }
